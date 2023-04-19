@@ -44,5 +44,18 @@ export class InvestmentComponent implements OnInit {
     this.investmentService.deleteInvestment(Number(id)).subscribe(() => {
       this.getInvestments();
     });
-  };
+  }; 
+  
+  findByType(type: any) {
+    if(!type) return;
+    
+    this.investmentService.getInvestments().subscribe((investments : any) => {
+      this.investments = investments.filter((investment:any) =>
+      investment.type && investment.type.toLowerCase().includes(type.toLowerCase())
+      );
+    });
+  }
+  
+  
+  
 }

@@ -34,5 +34,8 @@ export class InvestmentServiceService {
   deleteInvestment(id:any){
     return this.httpClient.delete(this.API_URL+"/deleteByIdInvestment?id="+id);
   }
+  findByType(searchValue: any) : Observable<any>{
+    return this.httpClient.get<any>(this.API_URL+"/afficherparType?type="+searchValue);
+  }
   
 }
