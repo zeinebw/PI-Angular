@@ -7,9 +7,9 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 
@@ -18,16 +18,18 @@ import { ComponentsModule } from './components/components.module';
   imports: [
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule,
+    HttpClientModule, 
     ComponentsModule,
     NgbModule,
     RouterModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot(),
     AppRoutingModule
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
