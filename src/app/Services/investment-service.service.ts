@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpHeaders } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -38,4 +39,21 @@ export class InvestmentServiceService {
     return this.httpClient.get<any>(this.API_URL+"/afficherparType?type="+searchValue);
   }
   
+  calculateInterest(investmentId: number, beginningPrice: number, endingPrice: number, dividends: number): Observable<number> {
+    const body = {
+      investmentId,
+      beginningPrice,
+      endingPrice,
+      dividends
+    };
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.httpClient.post<number>(this.API_URL+"/calculInterest", body, httpOptions);
+  }
+  
 }
+  
+

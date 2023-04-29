@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { InvestmentServiceService } from 'src/app/Services/investment-service.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { InvestmentComponent } from '../pages/investment/investment.component';
 
 @Component({
   selector: 'app-editinvestment',
@@ -12,10 +13,16 @@ import { Router } from '@angular/router';
 export class EditinvestmentComponent implements OnInit {
 
   reactiveform: FormGroup;
+  idInvest : number ;
+  investment: any;
 
-  constructor(private router: Router,private formBuilder: FormBuilder,private investmentService: InvestmentServiceService) { }
+  constructor(private router: Router,private formBuilder: FormBuilder,private investmentService: InvestmentServiceService, private route :ActivatedRoute ) { }
 
   ngOnInit(): void {
+    this.idInvest=this.route.snapshot.params['idInvest'];
+    //this.investment=this.investmentService.findByid(this.idInvest)
+    //console.log(this.investment)
+
     this.reactiveform = this.formBuilder.group({
       idInvest: ['', Validators.required],
       typeInvest: ['', Validators.required],

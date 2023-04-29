@@ -107,7 +107,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
-                <input class="form-control" placeholder="Search" type="text" (focus)="focus = true" (blur)="focus = false" [(ngModel)]="search" (keyup.enter)="findByType(search)">
+                <input class="form-control" placeholder="Search" type="text" (focus)="focus = true" (blur)="focus = false" [(ngModel)]="search" (keyup)="findByType(search)">
               </div>
             </div>
           </form>   
@@ -119,7 +119,7 @@
           <table class="table align-items-center table-flush">
             <thead class="thead-light">
               <tr>
-                <th scope="col"style="font-weight: bold;">ID_Investment</th>
+                <th scope="col"style="font-weight: bold;" (click)="sortById()">ID_Investment</th>
                 <th scope="col"style="font-weight: bold;">Type_Investment</th>
                 <th scope="col"style="font-weight: bold;">AMOUNT</th>
                 <th scope="col"style="font-weight: bold;">ID_USER</th>
@@ -135,7 +135,7 @@
                   <th scope="row">
                   <div class="media align-items-center">
                     <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
-                      <img alt="Image placeholder" src="../assets/img/theme/money.jpg">
+                      <img alt="Image placeholder" src="../assets/imgang/theme/money.jpg">
                     </a>
                     <div class="media-body">
                       <span class="mb-0 text-sm">{{invest.idInvest}}</span>
@@ -154,7 +154,7 @@
                   <div class="avatar-group">
                     <span class="mb-0 text-sm">{{invest.firstName}}</span>
                     <a href="javascript:void(0)" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
-                      <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg" class="rounded-circle">
+                      <img alt="Image placeholder" src="../assets/imgang/theme/team-1-800x800.jpg" class="rounded-circle">
                     </a>
                   </div> 
                 </td>
@@ -174,6 +174,9 @@
                     <a href="{{ invest.pdfFile }}" target="_blank">View PDF</a> <br>
                     <button type="button" class="btn btn-primary bg-gradient text-dark" style="background-image: linear-gradient(to right, #f14c47, #fcfcfcf6)" (click)="editInvestment(invest)">Edit</button>
                     <button type="button" class="btn btn-primary bg-gradient text-dark" style="background-image: linear-gradient(to right, #f14c47, #fcfcfcf6)" (click)="deleteInvestment(invest.idInvest)">Delete</button>
+                    <!-- parent.component.html -->
+                    <button type="button" class="btn btn-primary" (click)="openModal1()">Open Modal</button>
+                    <!--<app-modal #modal (close)="onModalClose()" (submit)="onModalSubmit($event)"></app-modal>-->
                   </td>
                 <td class="text-right">
                   <div ngbDropdown placement="bottom-right">

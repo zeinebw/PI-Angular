@@ -8,7 +8,6 @@ import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
 import { IconsComponent } from '../../pages/icons/icons.component';
 import { MapsComponent } from '../../pages/maps/maps.component';
 import { UserProfileComponent } from '../../pages/user-profile/user-profile.component';
-import { TablesComponent } from '../../pages/tables/tables.component';
 import { InvestmentComponent } from 'src/app/pages/investment/investment.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InvestmentAddComponent } from 'src/app/investment-add/investment-add.component';
@@ -28,7 +27,6 @@ import { EditinvestmentComponent } from 'src/app/editinvestment/editinvestment.c
   declarations: [
     DashboardComponent,
     UserProfileComponent,
-    TablesComponent,
     InvestmentComponent,
     InvestmentAddComponent,
     EditinvestmentComponent,
