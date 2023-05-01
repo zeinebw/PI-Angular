@@ -14,10 +14,9 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'investment',      component: InvestmentComponent },
     { path : 'investmentAdd', component : InvestmentAddComponent},
-    { path : 'investmentedit', component : EditinvestmentComponent},
-    { path:'interest', component: InterestComponent},
+    { path:'interest/:id', component: InterestComponent},
     { path:'modal', component: NgbdModalOptionsComponent},
-    { path : 'investmentedit/:idInvest', component : EditinvestmentComponent},
+    { path : 'investmentedit/:id', component : EditinvestmentComponent},
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent }
 ];

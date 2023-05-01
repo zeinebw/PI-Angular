@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpHeaders } from '@angular/common/http';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -38,21 +38,31 @@ export class InvestmentServiceService {
   findByType(searchValue: any) : Observable<any>{
     return this.httpClient.get<any>(this.API_URL+"/afficherparType?type="+searchValue);
   }
-  
-  calculateInterest(investmentId: number, beginningPrice: number, endingPrice: number, dividends: number): Observable<number> {
-    const body = {
-      investmentId,
-      beginningPrice,
-      endingPrice,
-      dividends
-    };
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
-    return this.httpClient.post<number>(this.API_URL+"/calculInterest", body, httpOptions);
+  getInvestmentById(id:any){
+    return this.httpClient.get(this.API_URL+"/afficherInvestmentavecId?id="+id);
   }
+  
+  calculateInterest(investmentId: number, beginningPrice: number, endingPrice: number): Observable<number> {
+    return this.httpClient.post<number>(this.API_URL+"/calculInterest?investmentId="+ investmentId +"&beginningPrice=" + beginningPrice +
+    "&endingPrice=" + endingPrice,null);
+  }
+
+  calculateStockInterestRate(investmentId: number, beginningPrice: number, endingPrice: number): Observable<number> {
+    return this.httpClient.post<number>(this.API_URL+"/calculateStockInterest?investmentId="+ investmentId +"&beginningPrice=" + beginningPrice +
+    "&endingPrice=" + endingPrice,null);
+  }
+  calculatePlcementInterestRate(investmentId: number): Observable<number> {
+    return this.httpClient.post<number>(this.API_URL+"/calculerTauxInteret?investmentId="+ investmentId,null);
+  }
+  calculateStockGain(investmentId: number, beginningPrice: number, endingPrice: number, dividends: number): Observable<number> {
+    return this.httpClient.post<number>(this.API_URL+"/calculate-gain-forstocks?investmentId="+ investmentId +"&beginningPrice=" + beginningPrice +
+    "&endingPrice=" + endingPrice+"&dividends=" + dividends ,null);
+  }
+
+  calculatePlcementGain(investmentId: number, compoundingPeriodInMonths: number): Observable<number> {
+    return this.httpClient.post<number>(this.API_URL+"/calculate-gain-forplacement?investmentId="+ investmentId +"&compoundingPeriodInMonths=" + compoundingPeriodInMonths,null);
+  }
+  
   
 }
   

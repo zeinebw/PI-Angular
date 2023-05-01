@@ -286,7 +286,7 @@ function toggleTheme() {
 }
 
 // Immediately invoked function to set the theme on initial load
-(function () {
+/*(function () {
     if (localStorage.getItem('leve_theme') === 'theme-dark') {
         setTheme('theme-dark');
         document.getElementById('slider').checked = false;
@@ -294,4 +294,6 @@ function toggleTheme() {
         setTheme('theme-light');
       document.getElementById('slider').checked = true;
     }
-})();
+}
+)()*/
+;

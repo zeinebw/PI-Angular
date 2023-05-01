@@ -3,6 +3,7 @@ import { InvestmentServiceService } from 'src/app/Services/investment-service.se
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
 import { MatDialog, MatDialogConfig, DialogPosition  } from '@angular/material/dialog';
 import { InterestComponent } from 'src/app/interest/interest.component';
 import { Dialog } from '@angular/cdk/dialog';
@@ -12,7 +13,7 @@ import { NgbdModalOptionsComponent } from 'src/app/ngbd-modal-options/ngbd-modal
 @Component({
   selector: 'app-investment',
   templateUrl: './investment.component.html',
-  styleUrls: ['./investment.component.css'],
+  styleUrls: ['../../../assets/css/argon.css'],
   providers: [InvestmentServiceService,MatDialog],
   entryComponents:[NgbdModalOptionsComponent]
 })
@@ -39,9 +40,19 @@ export class InvestmentComponent implements OnInit {
   });
   
   }
-  editInvestment(investment: any) {
+  /*editInvestment(investment: any) {
+    this.router.navigate(['/investmentedit', investment.idInvest]);
+  }*/
+  editInvestment(event: any, investment: any) {
+    event.preventDefault();
     this.router.navigate(['/investmentedit', investment.idInvest]);
   }
+  
+
+  interestInvestment(investment: any) {
+    this.router.navigate(['/interest', investment.idInvest]);
+  }
+
   //deleteInvestment(id:any){
     //this.investmentService.deleteInvestment(id).subscribe( () =>this.investmentService.getInvestments() );
   //}

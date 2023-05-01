@@ -98,18 +98,18 @@
     <div class="col">
       <div class="card shadow">
         <div class="card-header border-0" style="background-image: linear-gradient(to right, #ff000091, #f19c7a00);">
-          <h3 class="mb-0">Investment Table : </h3>
+          <h3 style="text-align: center; font-family:'Times New Roman', Times, serif;">Investment Table</h3>
           <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md--1">            
-              <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
+            <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
             <div class="form-group mb-0" [ngClass]="{ 'focused': focus === true }">
-              <div class="input-group input-group-alternative">
+              <div class="input-group input-group-alternative"> 
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
-                <input class="form-control" placeholder="Search" type="text" (focus)="focus = true" (blur)="focus = false" [(ngModel)]="search" (keyup)="findByType(search)">
-              </div>
-            </div>
+                  <input class="form-control" placeholder="Search" type="text" (focus)="focus = true" (blur)="focus = false" [(ngModel)]="search" (keyup)="findByType(search)">
+                </div>
+                </div>                
           </form>   
           </div>
           </div>
@@ -135,7 +135,7 @@
                   <th scope="row">
                   <div class="media align-items-center">
                     <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
-                      <img alt="Image placeholder" src="../assets/imgang/theme/money.jpg">
+                      <img alt="Image placeholder" src="../assets/imgang/theme/red.png">
                     </a>
                     <div class="media-body">
                       <span class="mb-0 text-sm">{{invest.idInvest}}</span>
@@ -146,10 +146,8 @@
                 {{invest.typeInvest}}    
                 </td>
                 <td>
-                  <span class="badge badge-dot mr-4">
-                    <i class="bg-warning"></i>  {{invest.amount}}     
-                  </span>
-                </td>
+                  <i class="fas fa-circle text-warning mr-2"></i>{{invest.amount}}     
+                </td>                
                 <td>
                   <div class="avatar-group">
                     <span class="mb-0 text-sm">{{invest.firstName}}</span>
@@ -171,22 +169,32 @@
                 <td>{{invest.interest}}</td>
                   <td>{{invest.dateInvest}}</td>
                   <td>
-                    <a href="{{ invest.pdfFile }}" target="_blank">View PDF</a> <br>
-                    <button type="button" class="btn btn-primary bg-gradient text-dark" style="background-image: linear-gradient(to right, #f14c47, #fcfcfcf6)" (click)="editInvestment(invest)">Edit</button>
-                    <button type="button" class="btn btn-primary bg-gradient text-dark" style="background-image: linear-gradient(to right, #f14c47, #fcfcfcf6)" (click)="deleteInvestment(invest.idInvest)">Delete</button>
-                    <!-- parent.component.html -->
-                    <button type="button" class="btn btn-primary" (click)="openModal1()">Open Modal</button>
-                    <!--<app-modal #modal (close)="onModalClose()" (submit)="onModalSubmit($event)"></app-modal>-->
+                    <a href="{{ invest.pdfFile }}" target="_blank" class="text-danger">View PDF</a> <br>
                   </td>
+                  <td>
+                    <a href="#" (click)="editInvestment($event, invest)">
+                      <i class="fas fa-edit text-warning"></i>
+                    </a>  
+                    </td>        
+                    <td> <a href="#" (click)="deleteInvestment(invest.idInvest)">
+                      <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                    </a>
+                    </td>          
+                    <!--<button type="button" class="btn btn-primary bg-gradient text-dark" style="background-image: linear-gradient(to right, #f14c47, #fcfcfcf6)" (click)="deleteInvestment(invest.idInvest)">Delete</button>-->
+                    <!-- parent.component.html -->
+                    <!--<button type="button" class="btn btn-primary" (click)="openDialog()">Open Modal</button>-->             
                 <td class="text-right">
                   <div ngbDropdown placement="bottom-right">
                     <a class="btn btn-sm btn-icon-only text-light"  ngbDropdownToggle>
                       <i class="fas fa-ellipsis-v"></i>
                     </a>
                     <div ngbDropdownMenu class=" dropdown-menu-right dropdown-menu-arrow">
-                      <a class="dropdown-item" href="javascript:void(0)">Action</a>
-                      <a class="dropdown-item" href="javascript:void(0)">Another action</a>
-                      <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate the Interest</a>
+                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate Stock InterestRate</a>
+                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate Placement InterestRate</a>
+                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate Placement Gain</a>
+                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate Stocks Gain</a>
+                      <a class="dropdown-item" href="javascript:void(0)">...</a>
                     </div>
                   </div>
                 </td>

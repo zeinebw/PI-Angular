@@ -12,7 +12,7 @@ import {
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['../../../assets/css/argon.css'],
 })
 export class DashboardComponent implements OnInit {
 

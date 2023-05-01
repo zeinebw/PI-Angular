@@ -1,7 +1,8 @@
-import { Component, OnInit,Inject  } from '@angular/core';
-import { MAT_DIALOG_DATA,MatDialogRef } from '@angular/material/dialog';
-import { NgbModal ,NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit,Renderer2   } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { map , catchError } from 'rxjs/operators';
+import { ActivatedRoute, Router } from '@angular/router';
 import { InvestmentServiceService } from '../Services/investment-service.service';
 
 
@@ -11,62 +12,110 @@ import { InvestmentServiceService } from '../Services/investment-service.service
   styleUrls: ['./interest.component.css']
 })
 export class InterestComponent implements OnInit {
-  /*constructor(  public dialogRef: MatDialogRef<InterestComponent>,
-    @Inject(MAT_DIALOG_DATA)  public data: { investmentId: number },
-    private fb: FormBuilder, private investmentService: InvestmentServiceService
- ) { }*/
- beginningPrice: number;
- endingPrice: number;
- dividends: number;
- result: number;
- reactiveform: FormGroup;
+  reactiveform: FormGroup;
+  idInvest : number ;
+  typeInvest : string;
+  public interest: number;
+  public interestRate: number;
+  public Gain: number;
+  investment: any;
+  isForm1Displayed = false;
+  isForm2Displayed = false;
+  isForm3Displayed = false;
 
- constructor(
-   private modalService: NgbModal,
-   private formBuilder: FormBuilder,
-   public activeModal: NgbActiveModal,
-   private investmentService: InvestmentServiceService
+  constructor(private router: Router,private formBuilder: FormBuilder,
+    private investmentService: InvestmentServiceService, 
+    private route :ActivatedRoute, private renderer: Renderer2,
+    ) { }
 
- ) {}
+  ngOnInit(): void {
+    this.idInvest = this.route.snapshot.params['id'];
+    
+    this.investmentService.getInvestmentById(this.idInvest).subscribe((investment: any) => {
+      this.investment = investment;
+      console.log(this.investment);
+    }, (error) => {
+      console.error('Failed to retrieve investment:', error);
+    });
 
- ngOnInit(): void {
-   this.reactiveform = this.formBuilder.group({
-     beginningPrice: ['', Validators.required],
-     endingPrice: ['', Validators.required],
-     dividends: ['', Validators.required],
-   });
- }
-
-  interestForm: FormGroup;
-  interest: number;
-  investmentId : number;
+    this.reactiveform = this.formBuilder.group({
+      beginningPrice: ['', Validators.required],
+      endingPrice: ['', Validators.required] ,
+      compoundingPeriodInMonths: ['', Validators.required]  });
+  }
   
-  /*ngOnInit() {
-    if (this.data) {
-      console.log(this.data.investmentId);
-      // Initialize the form group with initial values from data object
-      //this.interestForm = this.fb.group({
-        //beginningPrice: [this.data.beginningPrice, Validators.required],
-        //endingPrice: [this.data.endingPrice, Validators.required],
-        //dividends: [this.data.dividends, Validators.required]
-      //});
+  calculateInterest() {
+    if (this.isPlacementType()) {
+      this.reactiveform.get('beginningPrice').setValue(0);
+      this.reactiveform.get('endingPrice').setValue(0);
     }
-  }*/
-  
-
-
-
-  calculateInterest(investmentId: number) {
-    const beginningPrice = this.interestForm.get('beginningPrice').value;
-    const endingPrice = this.interestForm.get('endingPrice').value;
-    const dividends = this.interestForm.get('dividends').value;
-  
-    this.investmentService.calculateInterest(investmentId, beginningPrice, endingPrice, dividends)
+    
+    const beginningPrice = this.reactiveform.get('beginningPrice').value;
+    const endingPrice = this.reactiveform.get('endingPrice').value;  
+    this.investmentService.calculateInterest(this.idInvest, beginningPrice, endingPrice)
       .subscribe(interest => {
         this.interest = interest;
       });
   }
+
+   
+  calculateRate() {
+    let beginningPrice = 0;
+    let endingPrice = 0;
+    if (this.isPlacementType()) {
+      const compoundingPeriodInMonths = this.reactiveform.get('compoundingPeriodInMonths').value;
+      this.investmentService.calculatePlcementGain(this.idInvest,compoundingPeriodInMonths)
+      .subscribe(interest => {
+        this.interestRate = interest;
+      }, error => {
+        console.error('Error occurred while fetching placement gain:', error);
+      });
+    } else {
+      beginningPrice = this.reactiveform.get('beginningPrice').value;
+      endingPrice = this.reactiveform.get('endingPrice').value;  
+      this.investmentService.calculateStockInterestRate(this.idInvest, beginningPrice, endingPrice)
+        .subscribe(interest => {
+          this.interestRate = interest;
+        }, error => {
+          console.error('Error occurred while fetching stock interest rate:', error);
+        });
+    }
+  }
   
-}
+  
+  gotoINVESTMENTList() {
+    this.router.navigate(['/investment']); 
+  }
+
+  isPlacementType(): boolean {
+    console.log(this.investment.typeInvest);
+    // Check if the investment is of type PLACEMENT_POSTCOMPOUNDED or PLACEMENT_PRECOMPOUNDED
+    if (this.investment.typeInvest === 'PLACEMENT_POSTCOMPOUNDED' || this.investment.typeInvest === 'PLACEMENT_PRECOMPOUNDED') {
+      // Set the readOnly attribute to true for the beginningPrice and endingPrice inputs
+      const beginningPrice = this.renderer.selectRootElement('#beginningPrice');
+      const endingPrice = this.renderer.selectRootElement('#endingPrice');
+      this.renderer.setProperty(beginningPrice, 'readOnly', true);
+      this.renderer.setProperty(endingPrice, 'readOnly', true);
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  showForm1() {
+    this.isForm1Displayed = !this.isForm1Displayed;
+  }
+  showForm2() {
+    this.isForm2Displayed = !this.isForm2Displayed;
+  }
+  showForm3() {
+    this.isForm3Displayed = !this.isForm3Displayed;
+  }
+  
+  }
+  
+  
+
+  
 
 
