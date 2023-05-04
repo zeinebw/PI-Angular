@@ -27,6 +27,7 @@ import { InvestfrontComponent } from './investfront/investfront.component';
 import { SousheaderComponent } from './sousheader/sousheader.component';
 import { SortDirective } from './sort.directive';
 import { StockComponent } from './stock/stock.component';
+import { ComplaintComponent } from './complaint/complaint.component';
 
 @NgModule({
   imports: [
@@ -59,7 +60,8 @@ import { StockComponent } from './stock/stock.component';
     SousheaderComponent,
     SortDirective,
     InvestfrontComponent,
-    StockComponent
+    StockComponent,
+    ComplaintComponent
     ],
   providers: [],
   bootstrap: [AppComponent]
