@@ -7,6 +7,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { LoginComponent } from '../../pages/login/login.component';
 import { RegisterComponent } from '../../pages/register/register.component';
+import { UpdateUserComponent } from 'src/app/update-user/update-user.component';
+import { DeleteUserComponent } from 'src/app/delete-user/delete-user.component';
+import { UserslistComponent } from 'src/app/userslist/userslist.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -16,7 +19,10 @@ import { RegisterComponent } from '../../pages/register/register.component';
   ],
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    UpdateUserComponent,
+    DeleteUserComponent,
+    UserslistComponent
   ]
 })
 export class AuthLayoutModule { }

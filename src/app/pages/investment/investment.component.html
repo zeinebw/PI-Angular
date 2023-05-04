@@ -98,18 +98,18 @@
     <div class="col">
       <div class="card shadow">
         <div class="card-header border-0" style="background-image: linear-gradient(to right, #ff000091, #f19c7a00);">
-          <h3 style="text-align: center; font-family:'Times New Roman', Times, serif;">Investment Table</h3>
+          <h3 class="mb-0">Investment Table : </h3>
           <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md--1">            
-            <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
+              <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
             <div class="form-group mb-0" [ngClass]="{ 'focused': focus === true }">
-              <div class="input-group input-group-alternative"> 
+              <div class="input-group input-group-alternative">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
-                  <input class="form-control" placeholder="Search" type="text" (focus)="focus = true" (blur)="focus = false" [(ngModel)]="search" (keyup)="findByType(search)">
-                </div>
-                </div>                
+                <input class="form-control" placeholder="Search" type="text" (focus)="focus = true" (blur)="focus = false" [(ngModel)]="search" (keyup.enter)="findByType(search)">
+              </div>
+            </div>
           </form>   
           </div>
           </div>
@@ -119,7 +119,7 @@
           <table class="table align-items-center table-flush">
             <thead class="thead-light">
               <tr>
-                <th scope="col"style="font-weight: bold;" (click)="sortById()">ID_Investment</th>
+                <th scope="col"style="font-weight: bold;">ID_Investment</th>
                 <th scope="col"style="font-weight: bold;">Type_Investment</th>
                 <th scope="col"style="font-weight: bold;">AMOUNT</th>
                 <th scope="col"style="font-weight: bold;">ID_USER</th>
@@ -135,7 +135,7 @@
                   <th scope="row">
                   <div class="media align-items-center">
                     <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
-                      <img alt="Image placeholder" src="../assets/imgang/theme/red.png">
+                      <img alt="Image placeholder" src="../assets/img/theme/money.jpg">
                     </a>
                     <div class="media-body">
                       <span class="mb-0 text-sm">{{invest.idInvest}}</span>
@@ -145,15 +145,16 @@
                 <td>
                 {{invest.typeInvest}}    
                 </td>
-
                 <td>
-                  <i class="fas fa-circle text-warning mr-2"></i>{{invest.amount}}     
-                </td>                
+                  <span class="badge badge-dot mr-4">
+                    <i class="bg-warning"></i>  {{invest.amount}}     
+                  </span>
+                </td>
                 <td>
                   <div class="avatar-group">
-                    <span class="mb-0 text-sm">{{getFirstName(invest)}}</span>
+                    <span class="mb-0 text-sm">{{invest.firstName}}</span>
                     <a href="javascript:void(0)" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
-                      <img alt="Image placeholder" src="../assets/imgang/theme/team-1-800x800.jpg" class="rounded-circle">
+                      <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg" class="rounded-circle">
                     </a>
                   </div> 
                 </td>
@@ -170,32 +171,19 @@
                 <td>{{invest.interest}}</td>
                   <td>{{invest.dateInvest}}</td>
                   <td>
-                    <a href="{{ invest.pdfFile }}" target="_blank" class="text-danger">View PDF</a> <br>
+                    <a href="{{ invest.pdfFile }}" target="_blank">View PDF</a> <br>
+                    <button type="button" class="btn btn-primary bg-gradient text-dark" style="background-image: linear-gradient(to right, #f14c47, #fcfcfcf6)" (click)="editInvestment(invest)">Edit</button>
+                    <button type="button" class="btn btn-primary bg-gradient text-dark" style="background-image: linear-gradient(to right, #f14c47, #fcfcfcf6)" (click)="deleteInvestment(invest.idInvest)">Delete</button>
                   </td>
-                  <td>
-                    <a href="#" (click)="editInvestment($event, invest)">
-                      <i class="fas fa-edit text-warning"></i>
-                    </a>  
-                    </td>        
-                    <td> <a href="#" (click)="deleteInvestment(invest.idInvest)">
-                      <i class="fas fa-trash-alt fa-lg text-danger"></i>
-                    </a>
-                    </td>          
-                    <!--<button type="button" class="btn btn-primary bg-gradient text-dark" style="background-image: linear-gradient(to right, #f14c47, #fcfcfcf6)" (click)="deleteInvestment(invest.idInvest)">Delete</button>-->
-                    <!-- parent.component.html -->
-                    <!--<button type="button" class="btn btn-primary" (click)="openDialog()">Open Modal</button>-->             
                 <td class="text-right">
                   <div ngbDropdown placement="bottom-right">
                     <a class="btn btn-sm btn-icon-only text-light"  ngbDropdownToggle>
                       <i class="fas fa-ellipsis-v"></i>
                     </a>
                     <div ngbDropdownMenu class=" dropdown-menu-right dropdown-menu-arrow">
-                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate the Interest</a>
-                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate Stock InterestRate</a>
-                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate Placement InterestRate</a>
-                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate Placement Gain</a>
-                      <a class="dropdown-item" [routerLink]="['/interest', invest.idInvest]">Calculate Stocks Gain</a>
-                      <a class="dropdown-item" href="javascript:void(0)">...</a>
+                      <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
                     </div>
                   </div>
                 </td>
