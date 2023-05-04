@@ -1,0 +1,87 @@
+
+
+
+<br><br><br><br>
+         <h1 style="text-align: center; color: rgb(165, 66, 66);">Change your info</h1>
+      <div class="my-containter"  style="margin-top: 50px">
+      <!-- Table -->
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="card bg-white shadow border-0">
+            <div class="card-header bg-transparent pb-5">
+            </div>
+            <div class="card-body px-lg-5 py-lg-5">
+              
+              <form form #form="ngForm" (ngSubmit)="modifier()"  >
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                  
+                      <input class="form-control" type="text" placeholder="First Name" id="firstName" name="firstName" [(ngModel)]="user.firstName" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                      <input class="form-control" type="text" placeholder="Last Name" id="lastName" name="lastName" [(ngModel)]="user.lastName" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                      <input class="form-control" type="text" placeholder="CIN" id="cin" name="cin" [(ngModel)]="user.cin" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                      <input class="form-control" type="password" placeholder="Password" id="password" name="password" [(ngModel)]="user.password"   autocomplete="current-password" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                      <input class="form-control" type="text" placeholder="Phone" id="phone" name="phone" [(ngModel)]="user.phone" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                      <input class="form-control" type="text" placeholder="Profession" id="profession" name="profession" [(ngModel)]="user.profession" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                      <input class="form-control" type="email" placeholder="Email" id="email" name="email" [(ngModel)]="user.email" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                      <input class="form-control" type="number" placeholder="Age" id="age" name="age" [(ngModel)]="user.age" required>
+                  </div>
+                </div>
+    
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                      <select placeholder="sexe" class="form-control" id="sexe" name="sexe" [(ngModel)]="user.sexe" required>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                      </select>                </div>
+                </div>
+    
+    
+    
+                <div class="text-center">
+                  <button type="button" class="btn btn-primary mt-4" (click)="modifier()">Update</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    
+    
+    

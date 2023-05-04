@@ -1,0 +1,61 @@
+
+<div class="my-div" > 
+  <br><br>  <br><br>
+  <br>
+
+  <table class="table align-items-center table-dark table-flush" >
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">firstName</th>
+        <th scope="col">lastName</th>
+        <th scope="col">cin</th>
+        <th scope="col">role</th>
+        <th scope="col">password</th>
+        <th scope="col">phone</th>
+        <th scope="col">profession</th>
+        <th scope="col">email</th>
+        <th scope="col">age</th> 
+        <th scope="col">sexe</th>
+        <th scope="col">active</th>
+        <th scope="col" style="color: rgb(237, 48, 14); text-align: center;">    actions</th>
+
+        
+
+
+
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let User of users" >
+            <td> {{ User.id }} </td>
+            <td> {{ User.firstName }} </td>
+            <td> {{ User.lastName }} </td> 
+            <td> {{ User.cin }} </td> 
+            <td> {{ User.role }} </td>
+            <td> {{ User.password }} </td> 
+            <td> {{ User.phone }} </td>
+            <td> {{ User.profession }} </td>
+            <td>{{User.email}}</td>
+            <td>{{User.age}}</td>
+            <td>{{User.sexe}}</td>
+            <td>{{User.active}}</td>
+            <td>
+              <button (click) = "updateuser(User.id)" class="btn btn-warning">modify</button>
+            </td>
+            <td>
+              <button (click) = "deleteuser(User.id)" class="btn btn-danger">delete</button>
+            </td>
+                
+            
+        </tr>
+    </tbody>
+
+
+
+  
+  </table>
+  <br><br>
+    </div>
+   

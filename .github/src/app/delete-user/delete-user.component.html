@@ -1,0 +1,70 @@
+
+<br><br><br><br>
+
+
+
+
+<table class="table table-bordered table-dark">
+  <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">firstName</th>
+        <th scope="col">lastName</th>
+        <th scope="col">cin</th>
+        <th scope="col">role</th>
+        <th scope="col">password</th>
+        <th scope="col">phone</th>
+        <th scope="col">profession</th>
+        <th scope="col">email</th>
+        <th scope="col">age</th> 
+        <th scope="col">sexe</th>
+        <th scope="col">active</th>
+        <th scope="col" style="color: rgb(237, 48, 14); text-align: center;">    actions</th>
+
+        
+
+
+
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+        
+            <td> {{ user.id }} </td>
+            <td> {{ user.firstName }} </td>
+            <td> {{ user.lastName }} </td> 
+            <td> {{ user.cin }} </td> 
+            <td> {{ user.role }} </td>
+            <td> {{ user.password }} </td> 
+            <td> {{ user.phone }} </td>
+            <td> {{ user.profession }} </td>
+            <td>{{user.email}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.sexe}}</td>
+            <td>{{user.active}}</td>
+          
+            
+            
+                
+            
+     
+    </tbody>
+
+
+
+  
+  </table>
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <div style="text-align: center;">
+
+    <button (click) = "delete(user)" class="btn btn-danger" >delete</button>
+    
+  </div>
+  <br><br>
+  <br>
+  <br>
+  <br>
+
