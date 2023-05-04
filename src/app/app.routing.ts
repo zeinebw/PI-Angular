@@ -11,6 +11,7 @@ import { EditinvestmentComponent } from './editinvestment/editinvestment.compone
 import { InvestfrontComponent } from './investfront/investfront.component';
 import { StockComponent } from './stock/stock.component';
 import { InvestmentComponent } from './pages/investment/investment.component';
+import { InterestComponent } from './interest/interest.component';
 
 
 const routes: Routes =[
@@ -37,7 +38,9 @@ const routes: Routes =[
       {path: 'investuser', component: InvestfrontComponent },
       {path: 'investmentsuser', component: InvestmentComponent },
       {path: 'addinvestfront', component: InvestmentAddComponent },
-      {path: 'stocks', component: StockComponent }
+      {path: 'stocks', component: StockComponent },
+      {path: 'interestuser', component: InterestComponent }
+
 
     ]
   },
