@@ -8,11 +8,6 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {
-        "@schematics/angular:component": {
-          "styleext": "scss"
-        }
-      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -31,11 +26,19 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/scss/argon.scss"
+              "src/assets/scss/argon.scss",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss",
+              "src/assets/css/font-awesome.css",
+              "src/assets/fonts/font/flaticon.css",
+              "src/assets/css/style.css",
+              "src/assets/css/responsive.css"
             ],
             "scripts": [
               "node_modules/chart.js/dist/Chart.min.js",
-              "node_modules/clipboard/dist/clipboard.min.js"
+              "node_modules/clipboard/dist/clipboard.min.js",
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/slick-carousel/slick/slick.min.js"
             ]
           },
           "configurations": {
@@ -108,9 +111,25 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/style.css",
+              "src/assets/css/responsive.css"             
             ],
-            "scripts": [],
+            "scripts": [
+              "assets/js/jquery.min.js",
+              "assets/js/bootstrap.bundle.min.js",
+              "assets/js/jquery.meanmenu.js",
+              "assets/js/jquery.nice-select.min.js",
+              "assets/js/owl.carousel.min.js",
+              "assets/js/jquery.magnific-popup.min.js",
+              "assets/js/odometer.min.js",
+              "assets/js/jquery.appear.min.js",
+              "assets/js/jquery.ajaxchimp.min.js",
+              "assets/js/form-validator.min.js",
+              "assets/js/contact-form-script.js",
+              "assets/js/wow.min.js",
+              "assets/js/main.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -160,11 +179,6 @@
     }
   },
   "defaultProject": "argon-dashboard-angular",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "scss"
-    }
-  },
   "cli": {
     "analytics": false
   }
