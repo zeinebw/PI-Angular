@@ -10,6 +10,7 @@ import { InvestmentAddComponent } from './investment-add/investment-add.componen
 import { EditinvestmentComponent } from './editinvestment/editinvestment.component';
 import { InvestfrontComponent } from './investfront/investfront.component';
 import { StockComponent } from './stock/stock.component';
+import { InvestmentComponent } from './pages/investment/investment.component';
 
 
 const routes: Routes =[
@@ -34,6 +35,7 @@ const routes: Routes =[
     children: [
       {path: 'userhome', component: ContentFrontComponent},
       {path: 'investuser', component: InvestfrontComponent },
+      {path: 'investmentsuser', component: InvestmentComponent },
       {path: 'addinvestfront', component: InvestmentAddComponent },
       {path: 'stocks', component: StockComponent }
 

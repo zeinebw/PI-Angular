@@ -11,9 +11,8 @@
                     <ngx-slick-carousel #slickModal="slick-carousel" [config]="bannerConfig" class="banner-slider">
                         <div ngxSlickItem class="slide-item" *ngFor="let item of banner">
                             <div class="banner-text">
-                                <h1 class="text-custom-white fw-700">{{item.title}}</h1>
-                                <p class="text-custom-white">{{item.text}}</p>
-                                
+                                <h1 class="text-custom-white fw-700 text-right">{{item.title}}</h1>
+                                <p class="text-custom-white text-center">{{item.text}}</p>                                
                             </div>
                         </div>
                     </ngx-slick-carousel>
@@ -22,91 +21,6 @@
         </div>
     </div>
 </div>
-<!-- Start Banking Area -->
-<section class="banking-area pb-100">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="banking-image">
-                    <img src="assets/img/banking/banking-1.png" alt="image">
-
-                    <div class="shape-1">
-                        <img src="assets/img/banking/banking-shape-1.png" alt="image">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="banking-content">
-                    <span>Business banking</span>
-                    <h3>We operate our banking services in many countries around the world</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-
-                    <ul class="banking-list">
-                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</li>
-                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Banking Area -->
-
- <!-- Start Top Services Area -->
- <section class="top-services-area pt-100 pb-70">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="top-services-item">
-                    <div class="icon">
-                        <i class="flaticon-protection"></i>
-                    </div>
-                    <h3>
-                        <a href="#">Protect your card</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="link-btn">Get started <i class="flaticon-right-arrow"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="top-services-item">
-                    <div class="icon">
-                        <i class="flaticon-online-banking"></i>
-                    </div>
-                    <h3>
-                        <a href="#">Online banking</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="link-btn">See more details <i class="flaticon-right-arrow"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                <div class="top-services-item">
-                    <div class="icon">
-                        <i class="flaticon-mobile-app"></i>
-                    </div>
-                    <h3>
-                        <a href="#">Discover new features</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="link-btn">Download the app <i class="flaticon-right-arrow"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Top Services Area -->
-
-
-<!-- End Slider -->
-<!-- Start Intro -->
-
-<!-- End Intro -->
 <!-- Start About -->
 <!-- start aboutus-2 -->
 <!-- start aboutus-2 -->
@@ -120,10 +34,7 @@
             <div class="col-lg-6">
                 <div class="ln-about-left-side p-relative full-height">
                     <div class="first-img full-height">
-                        <img src="assets/img/banking/banking-1.png" class="image-fit" alt="img">
-                    </div>
-                    <div class="second-img">
-                        <img src="assets/img/banking/banking-1.png" class="image-fit" alt="img">
+                        <img src="assets/img/blog-details.jpg" class="image-fit" alt="img">
                     </div>
                 </div>
             </div>
@@ -151,11 +62,10 @@
                         </div>
                         <div class="lw-about-right-author">
                             <div class="lw-about-signature">
-                                <h5>BKFIN Team</h5>
-                                <p>Founder of BKFIN</p>
+                                <h5>MoneyLend Team</h5>
                             </div>
                             <div class="lw-about-sign-image">
-                                <img src="assets/img/banking/banking-1.png" alt="sign">
+                                <img src="assets/img/signature.png" alt="sign">
                             </div>
                         </div>
                     </div>
@@ -166,67 +76,6 @@
 </section>
 <!-- End aboutus-2 -->
 <!-- End aboutus-2 -->
-<!-- Start Type of payment -->
-<section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 no-padding">
-                <div class="ln-type-payment-tabs">
-                    <ul ngbNav #paymentnav="ngbNav" class="custom nav nav-tabs">
-                        <li [ngbNavItem]="1">
-                            
-                            <ng-template ngbNavContent>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="tab-inner">
-                                                <div class="tab-heading section-padding-bottom">
-                                                    <h3 class="text-custom-white">Feel Free, Connect us.</h3>
-                                                    <p class="text-custom-white no-margin">Loan around the corner or
-                                                        around the country. BKFIN lets you loan securely and with less
-                                                        worry thanks to purchase protection.*</p>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-4 col-md-6" *ngFor="let item of homeloan">
-                                                        <div class="ln-type-payment-box mb-xl-30">
-                                                            <div class="payment-icon mb-xl-20">
-                                                                
-                                                            </div>
-                                                            <div class="content-wrap">
-                                                                <h4 class="text-custom-white fw-600">{{item.title}}</h4>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </ng-template>
-                        </li>
-                        
-                    </ul>
-                    <div [ngbNavOutlet]="paymentnav" class="section-padding ln-type-payment"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Type of payment -->
-<!-- Start Main Services -->
-
-<!-- End Main Services -->
-<!-- start Loan Calculator -->
-
-<!-- End Loan Calculator -->
-<!-- start lw-tab -->
-
-<!-- End lw-tab -->
-<!-- Start section process-->
-
-<!-- End section process-->
 <!-- Start why choose us -->
 <section class="why-choose-us-style-2 section-padding">
     <div class="container">
@@ -234,10 +83,12 @@
             <div class="section-heading">
                 <h3 class="text-custom-black fw-700">Our services</h3>
                 <div class="section-description">
-                    <p >The personalized loan formula generated automatically based on 
+                    <p > <strong>
+                        The personalized loan formula generated automatically based on 
                         client needs,instant communication for renseignements to reduce  response time and a discount 
                         with our partners and many other offers and opportunities to seize are the main features of 
-                        our application .We can also use a system to detect frauds automatically by identity card verification.
+                        our application .
+                    </strong>
                     </p>
                 </div>
             </div>
@@ -253,7 +104,7 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="img-sec mb-md-40">
-                                                <img src="assets/img/banking/banking-1.png" class="full-width" alt="img">
+                                                <img src="assets/img/banking/banking-2.jpg" class="full-width" alt="img">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 align-self-center">
@@ -332,12 +183,63 @@
 </section>
 <!-- End why choose us -->
 
+<!-- Start Banking Area -->
+<section class="banking-area pb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="banking-image">
+                    <img src="assets/img/banking/banking-1.png" alt="image">
+
+                    <div class="shape-1">
+                        <img src="assets/img/banking/banking-shape-1.png" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="banking-content">
+                    <span>Business banking</span>
+                    <h3>We operate our banking services in many countries around the world</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
+                    <ul class="banking-list">
+                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</li>
+                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banking Area -->
+
+
+<!-- End Slider -->
+<!-- Start Intro -->
+
+<!-- End Intro -->
+<!-- Start Main Services -->
+
+<!-- End Main Services -->
+<!-- start Loan Calculator -->
+
+<!-- End Loan Calculator -->
+<!-- start lw-tab -->
+
+<!-- End lw-tab -->
+<!-- Start section process-->
+
+<!-- End section process-->
+
 <!-- Start Team Doctors -->
 <section class="section-padding bg-gradient doctors-team-style-2">
     <div class="container">
         <div class="section-header">
             <div class="section-heading">
-                <h3 class="text-custom-white fw-700">Our Team</h3>
+                <h3 class="text-custom-black fw-700">Our Team</h3>
               
             </div>
         </div>
@@ -374,7 +276,52 @@
 </section>
 <!-- End Team Doctors -->
 
+<!-- Start Top Services Area -->
+<section class="top-services-area pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="top-services-item">
+                    <div class="icon">
+                        <i class="flaticon-protection"></i>
+                    </div>
+                    <h3>
+                        <a href="#">Protect your card</a>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="link-btn">Get started <i class="flaticon-right-arrow"></i></a>
+                </div>
+            </div>
 
+            <div class="col-lg-4 col-md-6">
+                <div class="top-services-item">
+                    <div class="icon">
+                        <i class="flaticon-online-banking"></i>
+                    </div>
+                    <h3>
+                        <a href="#">Online banking</a>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="link-btn">See more details <i class="flaticon-right-arrow"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                <div class="top-services-item">
+                    <div class="icon">
+                        <i class="flaticon-mobile-app"></i>
+                    </div>
+                    <h3>
+                        <a href="#">Discover new features</a>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="link-btn">Download the app <i class="flaticon-right-arrow"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Top Services Area -->
 
 <!-- Start Faqs -->
 <section class="section-padding loan-faqs-sec bg-light-white findrate-top">
@@ -397,7 +344,7 @@
                         <div class="support-user">
                             <img src="assets/img/banking/banking-1.png" class="image-fit" alt="img">
                         </div>
-                        <div class="links text-center mb-xl-20"> <a href="#">contact@bkfin.tn</a>
+                        <div class="links text-center mb-xl-20"> <a href="#">contact@MoneyLend.tn</a>
                             <a href="#">123-456-7890</a>
                            
                         </div>

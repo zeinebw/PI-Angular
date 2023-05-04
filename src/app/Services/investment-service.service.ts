@@ -19,6 +19,9 @@ export class InvestmentServiceService {
   addInvestment(Investment:any){
     return this.httpClient.post(this.API_URL+"/AddInvestment",Investment);
   }
+  addInvestmentwithPDF(Investment:any){
+    return this.httpClient.post(this.API_URL+"/AddInvestments",Investment);
+  }
   editInvestment(Investment:any){
     return this.httpClient.put(this.API_URL+"/modifierInvestment",Investment);
   }

@@ -111,7 +111,19 @@ goToaddInvest(){
   }
 
 addFund(){
-    this.investmentservice.addInvestment(this.Invest).subscribe(()=> this.getInvestments());
+    this.investmentservice.addInvestment(this.Invest).subscribe(()=> this.goToDeails());
+
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'The investment is created successfully',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  }
+
+  addFundPDF(){
+    this.investmentservice.addInvestmentwithPDF(this.Invest).subscribe(()=> this.getInvestments());
 
     Swal.fire({
       position: 'top-end',
@@ -131,7 +143,7 @@ goToaddInves(){
 
 
 goToDeails(){
- this.router.navigate(['investment']);
+ this.router.navigate(['investmentsuser']);
 }
 
 

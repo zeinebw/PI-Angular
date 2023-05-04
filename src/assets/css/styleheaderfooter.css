@@ -900,7 +900,7 @@ label {
     content: '';
     width: 80px;
     height: 3px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     display: block;
     margin-top: 20px;
 }
@@ -916,7 +916,7 @@ label {
     bottom: -8px;
 }
 .footer .footer-box .footer-heading h4:before{
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .section-header-style-2 .section-description,
 .section-header .section-description {
@@ -943,8 +943,8 @@ label {
     margin-bottom: 10px;
 }
 .section-header-style-2 .higlight {
-    color: #0070ba;
-    border-bottom: 1px dotted #0070ba;
+    color: #9e1111;
+    border-bottom: 1px dotted #9e1111;
 }
 .section-header-style-2 .higlight:hover {
     color: #000;
@@ -981,7 +981,7 @@ label {
     color: #fff;
 }
 .slick-slider .slick-arrow:hover {
-    background: #0070ba;
+    background: #9e1111;
 }
 .slick-slider .slick-arrow:hover:before {
     color: #fff;
@@ -989,7 +989,7 @@ label {
 .slick-arrow {
     width: 40px;
     height: 40px;
-    background: #0070ba;
+    background: #9e1111;
     border-radius: 0px;
     font-size: 0;
     transition: 0.3s;
@@ -1007,7 +1007,7 @@ label {
     border-radius: 50%;
 }
 .slider-arrow-layout-2 .slick-arrow:before {
-    color: #0070ba;
+    color: #9e1111;
 }
 .slider-arrow-layout-2 .slick-prev {
     left: -50px;
@@ -1025,7 +1025,7 @@ label {
 }
 .slider-arrow-layout-2 .slick-prev:hover,
 .slider-arrow-layout-2 .slick-next:hover {
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .slider-arrow-layout-2 .slick-prev:hover:before,
 .slider-arrow-layout-2 .slick-next:hover:before {
@@ -1050,10 +1050,10 @@ label {
     width: 12px;
     height: 6px;
     border-radius: 10px;
-    background: #0070ba;
+    background: #9e1111;
     margin: 0 5px;
     transition: 0.6s all;
-    border: 2px solid #0070ba;
+    border: 2px solid #9e1111;
 }
 .slick-dots li.slick-active button {
     width: 24px;
@@ -1061,15 +1061,15 @@ label {
     border-radius: 50px;
 }
 .slider-arrow-layout-2 .slick-dots li button {
-    background: #0070ba8c;
-    border: 2px solid #0070ba00;
+    background: #9e11118c;
+    border: 2px solid #9e111100;
     width: 15px;
     height: 15px;
     border-radius: 50%;
 }
 .slider-arrow-layout-2 .slick-dots li.slick-active button {
-    background: #0070ba;
-    border: 2px solid #0070ba;
+    background: #9e1111;
+    border: 2px solid #9e1111;
 }
 .page-item:first-child .page-link,
 .page-item:last-child .page-link,
@@ -1141,7 +1141,7 @@ label {
     align-items: center;
     padding: 0 30px;
     font-size: 22px;
-    color: #0070ba;
+    color: #9e1111;
     margin-left: -64px;
     margin-top: 48px;
 }
@@ -1156,7 +1156,7 @@ label {
     z-index: -1;
 }
 .side-lines.style-2 .box{
-    background: #0070ba;
+    background: #9e1111;
 }
 .side-lines.style-2 .text{
     background: transparent;
@@ -1217,7 +1217,7 @@ p {
 }
 a,
 a:not([href]) {
-    color: #0070ba;
+    color: #9e1111;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -1225,7 +1225,7 @@ a:not([href]):hover,
 a:not([href]):focus,
 a:focus,
 a:hover {
-    color: #0070ba;
+    color: #9e1111;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -1333,7 +1333,7 @@ table {
 }
 .home-2 a:focus,
 .home-2 a:hover {
-    color: #0070ba;
+    color: #9e1111;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -1417,7 +1417,7 @@ textarea {
 }
 .form-control-custom:focus {
     box-shadow: none;
-    border-color: #0070ba;
+    border-color: #9e1111;
     outline: none
 }
 .form-layout-1 .form-group {
@@ -1430,7 +1430,7 @@ textarea {
     position: absolute;
     left: 0;
     top: 0;
-    color: #0070ba;
+    color: #9e1111;
     font-size: 35px;
     line-height: 1;
 }
@@ -1460,7 +1460,7 @@ textarea {
     margin-bottom: 0;
 }
 .form-layout-1 .form-group .form-control:focus {
-    border-color: #0070ba;
+    border-color: #9e1111;
     padding-left: 2px;
     box-shadow: none;
     outline: none;
@@ -1541,13 +1541,13 @@ label.custom-checkbox .checkmark {
 
 label.custom-checkbox:hover input ~ .checkmark {
     background-color: #fff;
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
 }
 /* When the checkbox is checked, add a blue background */
 
 label.custom-checkbox input:checked ~ .checkmark {
-    background-color: #0070ba;
-    border: 1px solid #0070ba;
+    background-color: #9e1111;
+    border: 1px solid #9e1111;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 
@@ -1616,12 +1616,12 @@ label.custom-checkbox .checkmark:after {
     z-index: -1;
 }
 .rounded-btn {
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
     background-color: #fff;
     transition: 0.5s all;
 }
 .rounded-btn:before {
-    background-color: #0070ba;
+    background-color: #9e1111;
     border-radius: 50px;
 }
 .rounded-btn:focus,
@@ -1630,11 +1630,11 @@ label.custom-checkbox .checkmark:after {
 .btn-submit:focus {
     color: #fff;
     transition: 0.5s all;
-    border-color: #0070ba;
+    border-color: #9e1111;
 }
 .btn-submit:hover,
 .btn-submit:focus {
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .rounded-btn-white:hover:before,
 .rounded-btn:hover:before,
@@ -1643,8 +1643,8 @@ label.custom-checkbox .checkmark:after {
 }
 .btn-submit-fill {
     color: #fff;
-    border: 1px solid #0070ba;
-    background-color: #0070ba;
+    border: 1px solid #9e1111;
+    background-color: #9e1111;
     transition: 0.5s all;
 }
 .btn-submit-fill:focus,
@@ -1662,11 +1662,11 @@ label.custom-checkbox .checkmark:after {
     font-size: 16px;
     border-radius: 50%;
     background-color: transparent;
-    color: #0070ba;
+    color: #9e1111;
 }
 .link-btn-rounded:hover {
     background-color: #fff;
-    color: #0070ba;
+    color: #9e1111;
 }
 .rounded-btn-white {
     border: 1px solid #27346a;
@@ -1703,10 +1703,10 @@ label.custom-checkbox .checkmark:after {
     background-color: #ffffff;
 }
 .bg-light-blue {
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .bg-custom-blue {
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .bg-dark-brown {
     background-color: #27346a;
@@ -1735,13 +1735,13 @@ label.custom-checkbox .checkmark:after {
     color: #27346a;
 }
 .text-light-blue {
-    color: #0070ba;
+    color: #9e1111;
 }
 .text-custom-yellow {
     color: #ff9600;
 }
 .text-custom-blue {
-    color: #0070ba;
+    color: #9e1111;
 }
 /*======================
 1.6 Modal & Popups
@@ -1773,7 +1773,7 @@ label.custom-checkbox .checkmark:after {
     align-items: center;
     padding: 10px 15px;
     width: 100%;
-    background: #0070ba;
+    background: #9e1111;
     color: #fff;
     cursor: pointer;
 }
@@ -1785,7 +1785,7 @@ label.custom-checkbox .checkmark:after {
 .custom-accordion .card .card-header .btn-link:before {
     content: '-';
     background: #fff;
-    color: #0070ba;
+    color: #9e1111;
     width: 20px;
     height: 20px;
     border-radius: 0%;
@@ -2149,7 +2149,7 @@ label.custom-checkbox .checkmark:after {
     left: 0;
     right: 0;
     z-index: 22;
-    background: #0070ba;
+    background: #9e1111;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
@@ -2179,7 +2179,7 @@ label.custom-checkbox .checkmark:after {
     font-size: 14px;
 }
 .header-style-2 .main-navigation-style-2 .navigation nav > ul > .menu-item.active {
-    color: #0070ba;
+    color: #9e1111;
 }
 .header-style-2 .menu-item-has-megamenu .megamenu,
 .header-style-2 .menu-item-has-children .sub-menu {
@@ -2208,8 +2208,8 @@ label.custom-checkbox .checkmark:after {
     border-bottom: 1px solid #eee;
 }
 .header-style-2 .menu-item-has-children .sub-menu > .menu-item:hover > a{
-    background: #0070ba;
-    border-color: #0070ba;
+    background: #9e1111;
+    border-color: #9e1111;
     color: #fff;
 }
 .header-style-2 .menu-item-has-megamenu:hover > .megamenu,
@@ -2303,7 +2303,7 @@ label.custom-checkbox .checkmark:after {
     right: 0;
     width: 35vw;
     height: 100%;
-    background: #0070ba;
+    background: #9e1111;
 }
 .single-banner > img {
     position: absolute;
@@ -2461,7 +2461,7 @@ label.custom-checkbox .checkmark:after {
 .intro-service-box .intro-service-box-inner .icon-box {
     font-size: 50px;
     line-height: 50px;
-    color: #0070ba;
+    color: #9e1111;
 }
 .intro-service-box .intro-service-box-inner .intro-content {
     padding-top: 20px;
@@ -2484,10 +2484,10 @@ label.custom-checkbox .checkmark:after {
 .intro-service-box:hover {
     margin-top: -30px;
     margin-bottom: -120px;
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .intro-service-box:hover .intro-service-box-inner {
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .intro-service-box:hover .intro-service-box-inner .intro-content h5,
 .intro-service-box:hover .intro-service-box-inner .intro-content p,
@@ -2576,7 +2576,7 @@ label.custom-checkbox .checkmark:after {
 .about-style-2 .about-img:before,
 .about-sec .doctor-img:before {
     content: '';
-    background: #0070ba;
+    background: #9e1111;
     display: block;
     height: 80%;
     top: 10%;
@@ -2638,10 +2638,10 @@ label.custom-checkbox .checkmark:after {
 .blog-style-2 .post .post-wrapper .blog-img .video-btn-wrapper:before,
 .about-style-3 .video-button .video-btn-wrapper:before,
 .about-style-2 .video-button .video-btn-wrapper:before {
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
 }
 .about-style-2 .about-img:before {
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .about-style-3 .about-content-wrapper,
 .about-style-2 .about-content-wrapper {
@@ -2681,7 +2681,7 @@ label.custom-checkbox .checkmark:after {
     margin-bottom: 5px;
 }
 .about-style-3 .about-img:before {
-    background: #0070ba;
+    background: #9e1111;
     top: -40px;
     height: calc(50% + 40px);
     width: calc(50% + 65px);
@@ -2728,7 +2728,7 @@ label.custom-checkbox .checkmark:after {
 
 .main-services-box .main-service-wrapper {
     background-color: #ffffff;
-    box-shadow: 0 0px 1px 2px #0070ba2b;
+    box-shadow: 0 0px 1px 2px #9e11112b;
     position: relative;
     z-index: 1;
     transition: 0.5s;
@@ -2772,7 +2772,7 @@ label.custom-checkbox .checkmark:after {
     width: 60px;
     height: 60px;
     line-height: 60px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     color: #ffffff;
     font-size: 40px;
     transition: 0.5s;
@@ -2850,7 +2850,7 @@ label.custom-checkbox .checkmark:after {
     font-size: 16px;
     border-radius: 50%;
     background-color: #fff;
-    color: #0070ba;
+    color: #9e1111;
 }
 .quality-services .quality-service-box:hover .quality-service-wrapper:before {
     background-color: #27346a;
@@ -2889,12 +2889,12 @@ label.custom-checkbox .checkmark:after {
 }
 .btn-LOANLY {
     color: #000;
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .btn-LOANLY:hover {
     color: #fff;
-    background-color: #0070ba;
-    border-color: #0070ba;
+    background-color: #9e1111;
+    border-color: #9e1111;
 }
 .book-appointment .appointment-sec .right-side {
     padding: 40px;
@@ -2952,7 +2952,7 @@ label.custom-checkbox .checkmark:after {
     left: 0;
     right: 0;
     height: 300px;
-    background: #0070ba;
+    background: #9e1111;
 }
 .appoint-testi-style-2,
 .home-3.appoint-testi-style-2{
@@ -2966,7 +2966,7 @@ label.custom-checkbox .checkmark:after {
     left: 0;
     right: 0;
     height: 100px;
-    background: #0070ba;
+    background: #9e1111;
 }
 .appoint-testi-style-2.style-4:after {
     height: 100%;
@@ -2979,10 +2979,10 @@ label.custom-checkbox .checkmark:after {
     padding-left: 0;
 }
 .appoint-testi-style-2.style-4 .form-style-2 .input-group .input-group-preappend {
-    color: #0070ba;
+    color: #9e1111;
 }
 .appoint-testi-style-2.style-4 .form-style-2 .input-group .form-control:focus {
-    border-color: #0070ba;
+    border-color: #9e1111;
 }
 .appoint-testi-style-2 .appointment-sec {
     z-index: 10;
@@ -2995,7 +2995,7 @@ label.custom-checkbox .checkmark:after {
 }
 .appoint-testi-style-2 .appointment-sec .right-side:before{
     content: '';
-    background-color: #0070ba;
+    background-color: #9e1111;
     display: block;
     height: 100%;
     bottom: -40px;
@@ -3023,7 +3023,7 @@ label.custom-checkbox .checkmark:after {
 }
 .appoint-testi-style-2.style-3 .appointment-sec .left-side:before {
     content: '';
-    background-color: #0070ba;
+    background-color: #9e1111;
     display: block;
     height: 100%;
     bottom: -40px;
@@ -3062,7 +3062,7 @@ label.custom-checkbox .checkmark:after {
     transition: all 260ms;
 }
 .testimonials-box .testimonials-wrapper .testimonial-nav .slick-current .testimonials-author {
-    box-shadow: 0 0 0 4px #0070ba inset;
+    box-shadow: 0 0 0 4px #9e1111 inset;
     transform: scale3d(1, 1, 1);
     transition: all 260ms;
 }
@@ -3221,13 +3221,13 @@ label.custom-checkbox .checkmark:after {
     transform: rotateY(-180deg);
 }
 .features-style-2 .video-button .video-btn-wrapper:before {
-    border-color: #0070ba;
+    border-color: #9e1111;
 }
 .features-style-2 .features-wrapper .card .back {
-    background: #0070ba;
+    background: #9e1111;
 }
 .features-style-2 .features-wrapper .card > .side:first-child:before {
-    background: #0070baa8;
+    background: #9e1111a8;
     opacity: 1;
 }
 .features-style-2 .feature-video-sec {
@@ -3245,7 +3245,7 @@ label.custom-checkbox .checkmark:after {
 .feature-style-3 .feature-box .feature-box-wrapper .icon-box {
     height: 55px;
     line-height: 0px;
-    color: #0070ba;
+    color: #9e1111;
     float: none;
     transition-duration: 0.3s;
     display: flex;
@@ -3270,7 +3270,7 @@ label.custom-checkbox .checkmark:after {
     z-index: 10;
     text-align: center;
     background-color: transparent;
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
     transition: 0.5s all;
     margin: 0 5px 10px;
     border-radius: 50px;
@@ -3282,7 +3282,7 @@ label.custom-checkbox .checkmark:after {
     left: 0;
     right: 0;
     height: 100%;
-    background-color: #0070ba;
+    background-color: #9e1111;
     border-radius: 50px;
     width: 0%;
     transition: 0.5s all;
@@ -3291,7 +3291,7 @@ label.custom-checkbox .checkmark:after {
 .gallery-style-2 .filter-gallery > ul > li.active > a,
 .gallery-style-2 .filter-gallery > ul > li:hover > a {
     color: #fff;
-    background: #0070ba;
+    background: #9e1111;
     transition: 0.5s all;
 }
 .gallery-style-2 .filter-gallery > ul > li.active > a:before,
@@ -3345,12 +3345,12 @@ label.custom-checkbox .checkmark:after {
     border-radius: 0;
 }
 .gallery-style-2.style-3 .filter-gallery > ul > li > a {
-    border-color: #0070ba;
+    border-color: #9e1111;
 }
 .gallery-style-2.style-3 .filter-gallery > ul > li.active > a,
 .gallery-style-2.style-3 .filter-gallery > ul > li:hover > a,
 .gallery-style-2.style-3 .filter-gallery > ul > li > a:before {
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .gallery-style-2.style-3 .gallery-grid .gallery-item > a:after {
     background-color: #66b7ca;
@@ -3457,9 +3457,9 @@ label.custom-checkbox .checkmark:after {
     z-index: 10;
     text-align: center;
     background-color: #fff;
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
     transition: 0.5s all;
-    color: #0070ba;
+    color: #9e1111;
     white-space: nowrap;
     border-radius: 0;
 }
@@ -3470,8 +3470,8 @@ label.custom-checkbox .checkmark:after {
     left: 0;
     right: 0;
     height: 100%;
-    background-color: #0070ba;
-    border-color: #0070ba;
+    background-color: #9e1111;
+    border-color: #9e1111;
     width: 0%;
     transition: 0.5s all;
     z-index: -1;
@@ -3483,7 +3483,7 @@ label.custom-checkbox .checkmark:after {
 .square-tabs .nav-tabs .nav-item:hover .nav-link,
 .square-tabs .nav-tabs .nav-item .nav-link.active {
     color: #fff;
-    border-color: #0070ba;
+    border-color: #9e1111;
 }
 .why-choose-us-style-2 .tab-inner,
 .why-choose-us-style-2 .square-tabs .nav-tabs {
@@ -3576,7 +3576,7 @@ label.custom-checkbox .checkmark:after {
     height: 75px;
     line-height: 75px;
     background-color: #ffffff;
-    color: #0070ba;
+    color: #9e1111;
     font-size: 30px;
     transition: 0.5s;
     box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
@@ -3585,7 +3585,7 @@ label.custom-checkbox .checkmark:after {
     font-size: 20px;
 }
 .service-box:hover:before {
-    background-color: #0070ba;
+    background-color: #9e1111;
     opacity: .80;
 }
 .service-box:hover .icon {
@@ -3625,7 +3625,7 @@ label.custom-checkbox .checkmark:after {
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     opacity: .5;
 }
 .services-style-2 .service-block:hover .service-block-inner .image-layer {
@@ -3723,21 +3723,21 @@ label.custom-checkbox .checkmark:after {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    color: #0070ba;
+    color: #9e1111;
     border-radius: 50%;
     margin: 0px 5px;
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
 }
 .doctors-team.darkblue .doctor-item .doctor-content ul li a {
-    color: #0070ba;
-    border-color: #0070ba;
+    color: #9e1111;
+    border-color: #9e1111;
 }
 .doctors-team.darkblue .doctor-item .doctor-content ul li a:hover {
-    background-color: #0070ba;
+    background-color: #9e1111;
     color: #fff;
 }
 .doctors-team .doctor-item .doctor-content ul li a:hover {
-    background-color: #0070ba;
+    background-color: #9e1111;
     color: #fff;
 }
 .doctors-team .doctor-item:hover {
@@ -3920,7 +3920,7 @@ label.custom-checkbox .checkmark:after {
     top: 20px;
     display: inline-block;
     padding: 5px 20px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     color: #fff;
     z-index: 9;
     transition: 0.4s;
@@ -3979,7 +3979,7 @@ label.custom-checkbox .checkmark:after {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: #0070ba;
+    background-color: #9e1111;
     opacity: .80;
 }
 .right-text-effect {
@@ -4009,7 +4009,7 @@ label.custom-checkbox .checkmark:after {
     position: relative;
 }
 .blog-style-2 .post:hover .post-wrapper .blog-meta {
-    border-bottom: 3px solid #0070ba;
+    border-bottom: 3px solid #9e1111;
 }
 .blog-style-2 .post .post-wrapper .blog-meta .post-date {
     text-align: center;
@@ -4033,7 +4033,7 @@ label.custom-checkbox .checkmark:after {
 .blog-style-2 .post .post-wrapper .blog-meta .blog-btn {
     font-size: 14px;
     font-weight: 500;
-    color: #0070ba;
+    color: #9e1111;
 }
 /*======================
 2.13 Testimonials
@@ -4046,7 +4046,7 @@ label.custom-checkbox .checkmark:after {
     line-height: 1.8;
 }
 .testimonials-inner .testimonial-content h6 i {
-    color: #0070ba;
+    color: #9e1111;
     font-size: 24px;
     margin-right: 5px;
 }
@@ -4152,7 +4152,7 @@ label.custom-checkbox .checkmark:after {
     bottom: 0;
     left: 0;
     border-radius: 50%;
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
     animation: ripple 2s linear infinite;
 }
 .video-btn-wrapper .video-btn {
@@ -4208,7 +4208,7 @@ label.custom-checkbox .checkmark:after {
     padding: 0 40px;
 }
 .download-app .app-img-side .section-header .section-heading h3:before{
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .download-app .app-img-side .app-features{
     max-width: 500px;
@@ -4325,7 +4325,7 @@ label.custom-checkbox .checkmark:after {
     left: 0;
     right: 0;
     height: 100%;
-    background-color: #0070ba;
+    background-color: #9e1111;
     width: 0%;
     transition: 0.5s all;
     z-index: -1;
@@ -4655,29 +4655,29 @@ label.custom-checkbox .checkmark:after {
 .newsletter-style-2 .newsletter-form-wrapper .input-group .input-group-append button:focus,
 .newsletter-style-2 .newsletter-form-wrapper .input-group .input-group-append button:before {
     border-radius: 0 10px 10px 0;
-    border-color: #0070ba;
-    background-color: #0070ba;
+    border-color: #9e1111;
+    background-color: #9e1111;
 }
 .newsletter-style-2 .newsletter-form-wrapper .input-group .form-control {
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
     padding-left: 15px;
     padding-right: 75px;
     border-radius: 10px;
 }
 .newsletter-style-2.style-2 .newsletter-form-wrapper .input-group .form-control {
     border-radius: 0;
-    border-color: #0070ba;
+    border-color: #9e1111;
 }
 .newsletter-style-2.style-2 .newsletter-form-wrapper .input-group .input-group-append button {
     border-radius: 0;
-    color: #0070ba;
-    border-color: #0070ba;
+    color: #9e1111;
+    border-color: #9e1111;
 }
 .newsletter-style-2.style-2 .newsletter-form-wrapper .input-group .input-group-append button:hover,
 .newsletter-style-2.style-2 .newsletter-form-wrapper .input-group .input-group-append button:focus,
 .newsletter-style-2.style-2 .newsletter-form-wrapper .input-group .input-group-append button:before {
     border-radius: 0;
-    background-color: #0070ba;
+    background-color: #9e1111;
 }
 .newsletter-style-2.style-2 .newsletter-form-wrapper .input-group .input-group-append button:hover {
     color: #fff;
@@ -4714,8 +4714,8 @@ label.custom-checkbox .checkmark:after {
     border-radius: 100%;
 }
 .copyright-style-1 .social-media ul li:hover a {
-    background-color: #0070ba;
-    border-color: #0070ba;
+    background-color: #9e1111;
+    border-color: #9e1111;
     color: #fff;
 }
 .footer-style-2 .footer-box .social-media ul {
@@ -4729,14 +4729,14 @@ label.custom-checkbox .checkmark:after {
     border-color: #fff;
 }
 .footer-style-2 .footer-box .social-media ul li:hover a {
-    background-color: #0070ba;
-    border-color: #0070ba;
+    background-color: #9e1111;
+    border-color: #9e1111;
     color: #fff;
     transform: rotate(360deg);
 }
 .footer-style-2.style-2 .footer-box .social-media ul li:hover a {
-    background-color: #0070ba;
-    border-color: #0070ba;
+    background-color: #9e1111;
+    border-color: #9e1111;
 }
 .footer-style-2.style-2 .popular_post li .post .post-wrapper .popular_post_img,
 .footer-style-2.style-2 .footer-box .contact-details ul li i {
@@ -4775,9 +4775,9 @@ label.custom-checkbox .checkmark:after {
     border-radius: 0px;
     text-align: center;
     line-height: 36px;
-    border: #0070ba solid 1px;
+    border: #9e1111 solid 1px;
     color: #ffffff;
-    background: #0070ba;
+    background: #9e1111;
     transition-duration: 0.3s;
     font-size: 22px;
     box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px;
@@ -4820,7 +4820,7 @@ label.custom-checkbox .checkmark:after {
     width: 20px;
     height: 20px;
     text-align: center;
-    background: #0070ba none repeat scroll 0 0;
+    background: #9e1111 none repeat scroll 0 0;
     color: #fff;
     line-height: 20px;
     font-size: 12px;
@@ -4959,7 +4959,7 @@ label.custom-checkbox .checkmark:after {
     width: 20px;
     height: 20px;
     text-align: center;
-    background: #0070ba none repeat scroll 0 0;
+    background: #9e1111 none repeat scroll 0 0;
     color: #fff;
     line-height: 20px;
     font-size: 12px;
@@ -5037,7 +5037,7 @@ label.custom-checkbox .checkmark:after {
     left: -10px;
 }
 .about-left-side-1 .company-progress .progress-item .progress .progress-bar {
-    background-color: #0070ba;
+    background-color: #9e1111;
     position: relative;
     transform: skew(-30deg);
     transform-origin: right bottom;
@@ -5082,7 +5082,7 @@ label.custom-checkbox .checkmark:after {
     font-size: 16px;
 }
 .sub-header .sub-header-content ul li.active {
-    color: #0070ba;
+    color: #9e1111;
 }
 .sub-header .sub-header-content ul li a:after {
     content: '|';
@@ -5171,7 +5171,7 @@ label.custom-checkbox .checkmark:after {
     font-weight: 600;
 }
 .sidebar_wrap .sidebar .sidebar_widgets .tags a:hover {
-    background: #0070ba;
+    background: #9e1111;
     color: #fff;
 }
 /*our-articles*/
@@ -5274,7 +5274,7 @@ label.custom-checkbox .checkmark:after {
     font-weight: 600;
 }
 .blog-detail .post-details-tags-social .tags a:hover {
-    background: #0070ba;
+    background: #9e1111;
     color: #fff;
 }
 .blog-detail .social-media-box > ul {
@@ -5394,7 +5394,7 @@ label.custom-checkbox .checkmark:after {
 
 .extra-page {
     margin: 0px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     font-weight: normal;
     font-size: 16px;
     overflow-x: hidden;
@@ -5404,7 +5404,7 @@ label.custom-checkbox .checkmark:after {
 .extra-page .ghost {
     width: 125px;
     height: 200px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     border: 3px solid #fff;
     position: relative;
     margin: auto;
@@ -5439,7 +5439,7 @@ label.custom-checkbox .checkmark:after {
     width: 20px;
     height: 20px;
     border-radius: 3px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     position: absolute;
     margin-top: 185px;
     transform: rotate(45deg) translateX(3px) translateY(2px);
@@ -5508,7 +5508,7 @@ label.custom-checkbox .checkmark:after {
     margin: 15px 0;
 }
 .extra-page .header a i {
-    color: #0070ba;
+    color: #9e1111;
     font-size: 20px;
     line-height: 1;
     width: 40px;
@@ -5677,7 +5677,7 @@ label.custom-checkbox .checkmark:after {
 .contact-bottom .contact-info .contact-info-wrapper .icon {
     font-size: 50px;
     line-height: 1;
-    color: #0070ba;
+    color: #9e1111;
 }
 /*======================
 10. Services
@@ -5688,7 +5688,7 @@ label.custom-checkbox .checkmark:after {
     margin-bottom: 10px;
 }
 .sidebar_wrap .sidebar .sidebar_widgets .sidebar-services li.active > a {
-    color: #0070ba;
+    color: #9e1111;
     font-weight: 500px;
 }
 .sidebar_wrap .sidebar .sidebar_widgets .sidebar-services li a {
@@ -5741,9 +5741,9 @@ label.custom-checkbox .checkmark:after {
     box-shadow: 0 0 25px 0 rgba(41, 61, 88, .06);
 }
 .home-2 #back-top a {
-    border: #0070ba solid 1px;
+    border: #9e1111 solid 1px;
     color: #ffffff;
-    background: #0070ba;
+    background: #9e1111;
 }
 .custom-img-left,
 .custom-img-right {
@@ -5788,7 +5788,7 @@ label.custom-checkbox .checkmark:after {
 }
 .ln-about-left-side:before{
     content: '';
-    background: #0070ba;
+    background: #9e1111;
     width: calc(100% - 160px);
     height: 100%;
     display: block;
@@ -5800,7 +5800,7 @@ label.custom-checkbox .checkmark:after {
 }
 .ln-about-left-side:after{
     content: '';
-    background: #0070ba;
+    background: #ed8585;
     width: 200px;
     height: 3px;
     display: block;
@@ -5841,7 +5841,7 @@ label.custom-checkbox .checkmark:after {
     content: '';
     width: 80px;
     height: 3px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     display: block;
     margin-top: 20px;
 }
@@ -5867,7 +5867,7 @@ label.custom-checkbox .checkmark:after {
 }
 
 .lw-about-right-content p span{
-    color: #0070ba;
+    color: #9e1111;
 }
 .lw-about-right-list ul{
     columns: 2;
@@ -5884,7 +5884,7 @@ label.custom-checkbox .checkmark:after {
     width: 20px;
     height: 20px;
     text-align: center;
-    background: #0070ba none repeat scroll 0 0;
+    background: #9e1111 none repeat scroll 0 0;
     color: #fff;
     line-height: 20px;
     font-size: 12px;
@@ -5947,8 +5947,8 @@ label.custom-checkbox .checkmark:after {
 .lw-nav-tabs .nav-item .nav-link:focus,
 .lw-nav-tabs .nav-item .nav-link.active{
     color: #ffffff;
-    border-color: #0070ba;
-    background-color: #0070ba;
+    border-color: #9e1111;
+    background-color: #9e1111;
 }
 .lw-nav-tabs .nav-item .nav-link:hover:after,
 .lw-nav-tabs .nav-item .nav-link:focus:after,
@@ -5959,7 +5959,7 @@ label.custom-checkbox .checkmark:after {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #0070ba;
+    border-bottom: 10px solid #9e1111;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -5997,7 +5997,7 @@ label.custom-checkbox .checkmark:after {
     color: #fff;
     text-align: center;
     display: table-row;
-    background-color:#0070ba;
+    background-color:#9e1111;
 }
 .lw-table-row-1 th{
     padding: 10px 15px;
@@ -6065,14 +6065,14 @@ label.custom-checkbox .checkmark:after {
     list-style: none;
     font-size: 12px;
     font-weight: 500;
-    color: #0070ba;
+    color: #9e1111;
 }
 .lw-table-data-4 ul li span{
     left: -25px;
     position: absolute;
     text-align: center;
     width: 2em;
-    color: #0070ba;
+    color: #9e1111;
     line-height: inherit;
 }
 .text-custom-yellow{
@@ -6167,8 +6167,8 @@ label.custom-checkbox .checkmark:after {
 .exp-cal2 .exp-cal2-input input{
     border-radius: 0;
     border: 0;
-    border-bottom: 2px solid #0070ba;
-    color: #0070ba;
+    border-bottom: 2px solid #9e1111;
+    color: #9e1111;
     height: 80px;
     outline: none;
     width: 100%;
@@ -6190,18 +6190,18 @@ label.custom-checkbox .checkmark:after {
 }
 .exp-cal2 .exp-cal-icon button{
     font-size: 20px;
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
     width: 50px;
     height: 50px;
     padding: 7px 20px;
     display: flex;
     align-items: center;
-    color: #0070ba;
+    color: #9e1111;
 }
 .exp-cal2 .exp-cal-icon button:hover{
     color: #fff;
-    border-color: #0070ba;
-    background: #0070ba;
+    border-color: #9e1111;
+    background: #9e1111;
 }
 .exp-cal2 .exp-cal2-loan p,
 .exp-cal2 .ex-calculate-value,
@@ -6214,7 +6214,7 @@ label.custom-checkbox .checkmark:after {
     margin-right: auto;
 }
 .exp-cal2 .ex-calculate-value h2{
-    color: #0070ba;
+    color: #9e1111;
     font-family: 'Montserrat', sans-serif;
     margin-top: 30px;
     text-align: center;
@@ -6225,7 +6225,7 @@ label.custom-checkbox .checkmark:after {
     cursor: pointer;
     border: none;
     padding: 0;
-    color: #0070ba;
+    color: #9e1111;
     font-family: 'Montserrat', sans-serif;
     margin-top: -8px;
     text-align: center;
@@ -6246,11 +6246,11 @@ label.custom-checkbox .checkmark:after {
     font-size: 26px;
 }
 .loan-steps .step-wrapper form .form-control-custom{
-    border-color: #0070ba;
+    border-color: #9e1111;
 }
 /*Custom Radio*/
 .custom-radio {
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
     padding: 10px 20px;
     height: 51px;
     display: flex;
@@ -6282,7 +6282,7 @@ label.custom-checkbox .checkmark:after {
     top: 0;
     width: 20px;
     height: 20px;
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
     border-radius: 100%;
     background: #fff;
 }
@@ -6291,7 +6291,7 @@ label.custom-checkbox .checkmark:after {
     content: '';
     width: 12px;
     height: 12px;
-    background: #0070ba;
+    background: #9e1111;
     position: absolute;
     top: 4px;
     left: 4px;
@@ -6314,7 +6314,7 @@ label.custom-checkbox .checkmark:after {
     position: relative;
     padding: 20px;
     display: block;
-    background-color:#0070ba;
+    background-color:#9e1111;
     text-align: center;
 }
 .lw-icon-box-inner{
@@ -6329,7 +6329,7 @@ label.custom-checkbox .checkmark:after {
 .lw-billing-section .slick-arrow{
     width: 40px;
     height: 40px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     border-radius: 0px;
     font-size: 0;
     transition: 0.3s;
@@ -6446,7 +6446,7 @@ label.custom-checkbox .checkmark:after {
     margin-bottom: 0;
 }
 .ln-loan-calculator .total-price{
-        color: #0070ba;
+        color: #9e1111;
     font-size: 32px;
     font-weight: 600;
     line-height: 1.2;
@@ -6487,7 +6487,7 @@ label.custom-checkbox .checkmark:after {
     content: '';
     width: 12px;
     height: 12px;
-    background: #0070ba;
+    background: #9e1111;
     position: absolute;
     top: 3px;
     left: 3px;
@@ -6517,13 +6517,13 @@ label.custom-checkbox .checkmark:after {
     top: 20px;
     width: 20px;
     height: 20px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     box-shadow: 0 0px 2px 0 #000;
 }
 .irs--flat .irs-bar {
     top: 25px;
     height: 12px;
-    background-color: #0070ba;
+    background-color: #9e1111;
     border-radius: 0;
 }
 .irs--flat .irs-handle>i:first-child{
@@ -6588,12 +6588,12 @@ label.custom-checkbox .checkmark:after {
 .pay-process-section .ln-pay-process{
     background: #fff;
     padding: 30px;
-    border-bottom: 2px solid #0070ba;
+    border-bottom: 2px solid #9e1111;
     width: 100%;
     margin-top: -180px;
 }
 .pay-process-section .ln-pay-process .circle-icon{
-    border: 1px solid #0070ba;
+    border: 1px solid #9e1111;
     width: 40px;
     font-size: 20px;
     margin: 0 auto;
@@ -6601,7 +6601,7 @@ label.custom-checkbox .checkmark:after {
     border-radius: 100%;
     text-align: center;
     margin-bottom: 10px;
-    background: #0070ba;
+    background: #9e1111;
     color: #fff;
 }
 .pay-process-section .ln-pay-process .irs--flat .irs-max,
@@ -6627,7 +6627,7 @@ label.custom-checkbox .checkmark:after {
     height: 8px;
 }
 .pay-process-section .ln-pay-process label span.circle-tip{
-    background-color: #0070ba;
+    background-color: #9e1111;
     width: 20px;
     font-size: 12px;
     color: #fff;
@@ -6676,7 +6676,7 @@ label.custom-checkbox .checkmark:after {
     border-color: transparent;
     border-radius: 0;
     border: 0;
-    border-bottom: 1px solid #0070ba;
+    border-bottom: 1px solid #9e1111;
 }
 .faqs-accordion .card .card-header {
     padding: 0;
@@ -6706,7 +6706,7 @@ label.custom-checkbox .checkmark:after {
 }
 .faqs-accordion .card .card-header .btn-link:after {
     content: 'Close';
-    color: #0070ba;
+    color: #9e1111;
     border-radius: 0%;
     font-size: 14px;
     display: flex;
@@ -6719,7 +6719,7 @@ label.custom-checkbox .checkmark:after {
 }
 .faqs-accordion .card .card-header .btn-link.collapsed:after {
     content: 'View';
-    color: #0070ba;
+    color: #9e1111;
 }
 .faqs-accordion .card .card-body {
     padding: 15px 0;
@@ -6740,7 +6740,7 @@ label.custom-checkbox .checkmark:after {
     margin: 0 auto;
 }
 .findratesec .input-form-box .form-control-custom{
-    border-color: #0070ba;
+    border-color: #9e1111;
 }
 .findrate-top{
     padding-top: 150px;
@@ -6756,10 +6756,10 @@ label.custom-checkbox .checkmark:after {
     background-color: transparent;
 }
 .btn-submit-white:hover{
-    color: #0070ba;
+    color: #9e1111;
     background: #fff;
 }
-.in-fluid-header {
+.in-fluid-header { 
     max-width: 1120px;
     margin: 0 auto;
 }
@@ -6813,7 +6813,7 @@ label.custom-checkbox .checkmark:after {
     z-index: 1;
     box-shadow: 4px 4px 20px 0 rgba(1, 1, 1, 0.12);
     max-width: 100%;
-    border-top: 10px solid #0070ba;
+    border-top: 10px solid #9e1111;
 }
 .ln-loan-calculator-wrap .loan-price-wrap .quantity{
     display: flex;
@@ -6896,7 +6896,7 @@ label.custom-checkbox .checkmark:after {
 .book-appointment .appointment-sec .right-side .btn-submit:hover,
 .service-page .service-image .service-text-wrapper .btn-submit:hover,
 .main-navigation-style-1 .navigation .main-menu .cta-btn > a:hover{
-    border-color: #0070ba;
+    border-color: #9e1111;
 }
 /*User Dashboard*/
 .user-dashboard-sec .dashboard-second-sec:after,
@@ -6906,7 +6906,7 @@ label.custom-checkbox .checkmark:after {
     content: "\f107";
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    color: #0070ba;
+    color: #9e1111;
     font-size: 22px;
     line-height: 1.2;
     position: relative;
@@ -7023,7 +7023,7 @@ label.custom-checkbox .checkmark:after {
     height: 70px;
     border-radius: 100%;
     background-color:#11c391;
-    background-image:linear-gradient(91deg, transparent 50%, #0070ba 50%), linear-gradient(90deg, #0070ba 50%, transparent 50%);
+    background-image:linear-gradient(91deg, transparent 50%, #9e1111 50%), linear-gradient(90deg, #9e1111 50%, transparent 50%);
 }
 .user-dashboard-sec .dashboard-second-sec .right-side .line-chart-box{
     margin-left: 30px;
@@ -7072,7 +7072,7 @@ label.custom-checkbox .checkmark:after {
     min-height: 207px;
     border-radius: 100%;
     background-color:#11c391;
-    background-image:linear-gradient(91deg, transparent 50%, #0070ba 50%), linear-gradient(90deg, #0070ba 50%, transparent 50%);
+    background-image:linear-gradient(91deg, transparent 50%, #9e1111 50%), linear-gradient(90deg, #9e1111 50%, transparent 50%);
 }
 .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area{
         max-width: 50%;
@@ -7141,7 +7141,7 @@ label.custom-checkbox .checkmark:after {
 .user-dashboard-sec .dashboard-third-sec .tabs-sec>.nav>.nav-item>.nav-link:before{
     content: '';
     height: 2px;
-    background: #0070ba;
+    background: #9e1111;
     display: block;
     position: absolute;
     left: 0;
@@ -7154,8 +7154,8 @@ label.custom-checkbox .checkmark:after {
 .user-dashboard-sec .dashboard-third-sec .tabs-sec>.nav>.nav-item>.nav-link.active,
 .user-dashboard-sec .dashboard-third-sec .tabs-sec>.nav>.nav-item:hover>.nav-link:before,
 .user-dashboard-sec .dashboard-third-sec .tabs-sec>.nav>.nav-item>.nav-link.active:before{
-    color: #0070ba;
-    border-color: #0070ba;
+    color: #9e1111;
+    border-color: #9e1111;
     width: 100%;
 }
 .user-dashboard-sec .dashboard-third-sec .tabs-sec .sch-payment .sch-payment-box{
@@ -7211,12 +7211,12 @@ label.custom-checkbox .checkmark:after {
 }
 .book-appointment .appointment-sec .right-side .btn-submit:hover{
     border-color: #fff;
-    color: #0070ba;
+    color: #9e1111;
 }
 .book-appointment .appointment-sec .right-side .btn-submit:before{
     background-color: #fff;
 }
 .footer .footer-box .newsletter button:hover{
     background-color: #fff;
-    color: #0070ba;
+    color: #9e1111;
 }
