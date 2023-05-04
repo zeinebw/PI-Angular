@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "photo": "assets/img/blog/blog7.jpg",
+        "photo": "assets/img/blog/blog-7.jpg",
         "postdate": "25 January , 2021",
         "title": "Bigger home still the goal?",
         "shortdesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...",
@@ -48,7 +48,7 @@
     },
     {
         "id": 2,
-        "photo": "assets/img/blog/blog8.jpg",
+        "photo": "assets/img/blog/blog-8.jpg",
         "postdate": "25 January , 2021",
         "title": "Choosing right education loan",
         "shortdesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...",

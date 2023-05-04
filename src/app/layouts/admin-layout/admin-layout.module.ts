@@ -12,6 +12,7 @@ import { InvestmentComponent } from 'src/app/pages/investment/investment.compone
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InvestmentAddComponent } from 'src/app/investment-add/investment-add.component';
 import { EditinvestmentComponent } from 'src/app/editinvestment/editinvestment.component';
+import { UserLayoutComponent } from '../user-layout/user-layout.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import banner from "../data/banner.json";
 import blogbox from '../data/blog.json';
-import intropost from '../data/intro.json';
 import processbox from '../data/process.json'
 import serviceblock from '../data/services.json'
 import teamblock from '../data/team.json';

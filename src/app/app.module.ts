@@ -9,6 +9,8 @@ import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { InterestComponent } from './interest/interest.component';
@@ -21,6 +23,10 @@ import { ContentFrontComponent } from './content-front/content-front.component';
 import { FooterFrontComponent } from './footer-front/footer-front.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { UserLayoutComponent } from './layouts/user-layout/user-layout.component';
+import { InvestfrontComponent } from './investfront/investfront.component';
+import { SousheaderComponent } from './sousheader/sousheader.component';
+import { SortDirective } from './sort.directive';
+import { StockComponent } from './stock/stock.component';
 
 @NgModule({
   imports: [
@@ -28,7 +34,9 @@ import { UserLayoutComponent } from './layouts/user-layout/user-layout.component
     FormsModule,
     SlickCarouselModule,
     HttpClientModule, 
+    MatTableModule,
     ComponentsModule,
+    MatPaginatorModule,
     NgbModule,
     CommonModule,
     RouterModule,
@@ -47,7 +55,11 @@ import { UserLayoutComponent } from './layouts/user-layout/user-layout.component
     NgbdModalOptionsComponent,
     HeaderFrontComponent,
     FooterFrontComponent,
-    ContentFrontComponent
+    ContentFrontComponent,
+    SousheaderComponent,
+    SortDirective,
+    InvestfrontComponent,
+    StockComponent
     ],
   providers: [],
   bootstrap: [AppComponent]

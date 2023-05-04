@@ -31,11 +31,6 @@ export class InvestmentComponent implements OnInit {
   ngOnInit() {
     this.investmentService.getInvestments().subscribe((datas) => {
       console.log(datas);
-      for (let investment of Object.values(datas)) {
-          this.investmentService.convertBinaryToDataUrl(investment.pdf).subscribe((url) => {
-              investment.pdfFile = url;
-          });
-      }
       this.investments = Object.values(datas);
   });
   
@@ -176,7 +171,13 @@ export class InvestmentComponent implements OnInit {
     modalRef.componentInstance.openBackDropCustomClass(modalRef);
   }
   
-
+  getFirstName(invest: any) {
+    if (invest && invest.user && invest.user.firstName) {
+      return invest.user.firstName;
+    } else {
+      return "Unknown";
+    }
+  }
 }
 
   

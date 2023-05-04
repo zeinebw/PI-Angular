@@ -8,6 +8,9 @@ import { UserLayoutComponent } from './layouts/user-layout/user-layout.component
 import { ContentFrontComponent } from './content-front/content-front.component';
 import { InvestmentAddComponent } from './investment-add/investment-add.component';
 import { EditinvestmentComponent } from './editinvestment/editinvestment.component';
+import { InvestfrontComponent } from './investfront/investfront.component';
+import { StockComponent } from './stock/stock.component';
+
 
 const routes: Routes =[
  
@@ -30,8 +33,9 @@ const routes: Routes =[
     component: UserLayoutComponent,
     children: [
       {path: 'userhome', component: ContentFrontComponent},
-      {path: 'investuser', component: EditinvestmentComponent 
-    }
+      {path: 'investuser', component: InvestfrontComponent },
+      {path: 'addinvestfront', component: InvestmentAddComponent },
+      {path: 'stocks', component: StockComponent }
 
     ]
   },

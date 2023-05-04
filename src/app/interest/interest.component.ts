@@ -16,8 +16,11 @@ export class InterestComponent implements OnInit {
   idInvest : number ;
   typeInvest : string;
   public interest: number;
+  public total:number;
+  errorMessage:string;
+  public interestGain: any[] = [];
   public interestRate: number;
-  public Gain: number;
+  public gain: any;
   investment: any;
   isForm1Displayed = false;
   isForm2Displayed = false;
@@ -29,18 +32,19 @@ export class InterestComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.idInvest = this.route.snapshot.params['id'];
-    
+    this.idInvest = this.route.snapshot.params['id'];    
     this.investmentService.getInvestmentById(this.idInvest).subscribe((investment: any) => {
       this.investment = investment;
       console.log(this.investment);
     }, (error) => {
       console.error('Failed to retrieve investment:', error);
     });
+    
 
     this.reactiveform = this.formBuilder.group({
       beginningPrice: ['', Validators.required],
       endingPrice: ['', Validators.required] ,
+      dividends: ['', Validators.required] ,
       compoundingPeriodInMonths: ['', Validators.required]  });
   }
   
@@ -57,14 +61,12 @@ export class InterestComponent implements OnInit {
         this.interest = interest;
       });
   }
-
-   
+  
   calculateRate() {
     let beginningPrice = 0;
     let endingPrice = 0;
     if (this.isPlacementType()) {
-      const compoundingPeriodInMonths = this.reactiveform.get('compoundingPeriodInMonths').value;
-      this.investmentService.calculatePlcementGain(this.idInvest,compoundingPeriodInMonths)
+      this.investmentService.calculatePlcementInterestRate(this.idInvest)
       .subscribe(interest => {
         this.interestRate = interest;
       }, error => {
@@ -79,9 +81,8 @@ export class InterestComponent implements OnInit {
         }, error => {
           console.error('Error occurred while fetching stock interest rate:', error);
         });
+      }
     }
-  }
-  
   
   gotoINVESTMENTList() {
     this.router.navigate(['/investment']); 
@@ -102,6 +103,17 @@ export class InterestComponent implements OnInit {
     }
   }
 
+  isSTOCKType(): boolean {
+    console.log(this.investment.typeInvest);
+    if (this.investment.typeInvest === 'STOCKS') {
+      // Set the readOnly attribute to true for the beginningPrice and endingPrice inputs
+      const compoundingPeriodInMonths = this.renderer.selectRootElement('#compoundingPeriodInMonths');
+      this.renderer.setProperty(compoundingPeriodInMonths, 'readOnly', true);
+      return true;
+    } else {
+      return false;
+    }
+  }
   showForm1() {
     this.isForm1Displayed = !this.isForm1Displayed;
   }
@@ -111,7 +123,41 @@ export class InterestComponent implements OnInit {
   showForm3() {
     this.isForm3Displayed = !this.isForm3Displayed;
   }
-  
+
+  calculateGain() {
+    let beginningPrice = 0;
+    let endingPrice = 0;
+    let dividends = 0;
+    if (this.isPlacementType()) {
+      const compoundingPeriodInMonths = this.reactiveform.get('compoundingPeriodInMonths').value;
+      this.investmentService.calculatePlcementGain(this.idInvest,compoundingPeriodInMonths)
+      .subscribe(interest => {
+        this.interest = interest;
+      }, error => {
+        console.error('Error occurred while fetching placement gain:', error);
+      });
+    } else {
+      beginningPrice = this.reactiveform.get('beginningPrice').value;
+      endingPrice = this.reactiveform.get('endingPrice').value; 
+      dividends = this.reactiveform.get('dividends').value; 
+      this.investmentService.calculateStockGain(this.idInvest, beginningPrice, endingPrice,dividends)
+      .subscribe(result => {
+        this.interestGain = Object.entries(result);
+      });
+    }
+  }
+
+  calculatePlacementGain(){
+    const compoundingPeriodInMonths = this.reactiveform.get('compoundingPeriodInMonths').value;
+    this.investmentService.calculatePlacementGain(this.idInvest, compoundingPeriodInMonths)
+    .subscribe(gain => {
+      this.gain = gain;
+      console.log(gain);
+    }, error => {
+      console.error('Error occurred while fetching placement gain:', error);
+    });
+
+  }
   }
   
   
